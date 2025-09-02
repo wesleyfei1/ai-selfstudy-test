@@ -1,0 +1,60 @@
+site_name: My MkDocs Material Documentation
+site_url: https://wesleyfei.clippers.com/
+
+
+#repo_name: aiTour
+#repo_url:
+#edit_uri: 
+
+theme:
+  name: material
+  font:
+    text: Merriweather Sans
+    code: Red Hat Mono
+  icon:
+    logo: simple/github
+  #favicon: images/favicon.png
+  features:
+    - navigation.footer
+  palette: 
+    # Darke Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-cloudy
+        name: Dark mode
+      primary: green  # the top array of the page
+      accent: deep orange # the bottom array of the page
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: blue
+      accent: deep orange
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji 
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+
+  - admonition
+  - pymdownx.details
+
+
+
+extra:
+  social:
+    - icon: fontawesome/brands/zhihu
+      link: https://www.zhihu.com/people/2400fwh
+
+copyright: Copyright &copy; 2025 - present WesleyFei
